@@ -145,12 +145,10 @@ const TableRegistros = () => {
         {
             title: "Nombre completo",
             dataIndex: "nombre",
-            responsive: ["sm"]
         },
         {
             title: "Fecha",
             dataIndex: "fecha",
-            responsive: ["sm"]
         },
         {
             title: "Obra",
