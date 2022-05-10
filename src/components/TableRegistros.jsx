@@ -14,7 +14,10 @@ import { HORAS } from "../config/collections";
 import moment_ from 'moment';
 import * as XLSX from 'xlsx';
 import { getDownloadURL, ref } from "firebase/storage";
+import './TableRegistros.css';
+
 const moment = moment_;
+
 
 
 const TableRegistros = () => {
@@ -142,10 +145,12 @@ const TableRegistros = () => {
         {
             title: "Nombre completo",
             dataIndex: "nombre",
+            responsive: ["sm"]
         },
         {
             title: "Fecha",
             dataIndex: "fecha",
+            responsive: ["sm"]
         },
         {
             title: "Obra",
@@ -187,7 +192,6 @@ const TableRegistros = () => {
                 columns={columns}
                 rowKey={"id"}
                 dataSource={datasource}
-                responsive={['xxl', 'xl', 'lg', 'md', 'sm', 'xs']}
             />
             <FormRegistro closeModal={closeModal} visible={visibleForm} data={selection} action={action} />
         </>
