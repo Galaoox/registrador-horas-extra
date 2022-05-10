@@ -7,13 +7,14 @@ import {
     updateDoc,
 } from "@firebase/firestore";
 import { TimePicker } from "antd";
-import * as moment from "moment";
+import * as moment_ from 'moment';
 import { HORAS } from "../config/collections";
 import { db, storage } from "../config/firebase";
 import { useEffect, useState } from "react";
 import UploadCustom from "./UploadCustom";
 import { uploadBytes, ref } from "firebase/storage";
 import { v4 as uuidv4 } from "uuid";
+const moment = moment_;
 
 const FormRegistro = ({ closeModal, visible, data, action }) => {
     const [form] = Form.useForm();
