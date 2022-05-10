@@ -11,7 +11,7 @@ import { collection, deleteDoc, doc, getDocs, onSnapshot, orderBy, query } from 
 import { db, storage } from "../config/firebase";
 import FormRegistro from './FormRegistro';
 import { HORAS } from "../config/collections";
-import * as moment_ from 'moment';
+import moment_ from 'moment';
 import * as XLSX from 'xlsx';
 import { getDownloadURL, ref } from "firebase/storage";
 const moment = moment_;
