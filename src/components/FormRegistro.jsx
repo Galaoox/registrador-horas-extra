@@ -7,7 +7,7 @@ import {
     updateDoc,
 } from "@firebase/firestore";
 import { TimePicker } from "antd";
-import * as moment_ from 'moment';
+import moment_ from 'moment';
 import { HORAS } from "../config/collections";
 import { db, storage } from "../config/firebase";
 import { useEffect, useState } from "react";
