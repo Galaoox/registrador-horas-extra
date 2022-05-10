@@ -166,12 +166,12 @@ const TableRegistros = () => {
         {
             title: "Evidencia ingreso",
             dataIndex: "evidenciaIngreso",
-            render: (text)=> <Button onClick={() => downloadEvidencia(text)} >Descargar evidencia </Button>
+            render: (text)=>  (text && <Button onClick={() => downloadEvidencia(text)} >Descargar evidencia </Button>)
         },
         {
             title: "Evidencia salida",
             dataIndex: "evidenciaSalida",
-            render: (text)=> <Button onClick={() => downloadEvidencia(text)} >Descargar evidencia </Button>
+            render: (text)=> (text && <Button onClick={() => downloadEvidencia(text)} >Descargar evidencia </Button>)
         },
     ];
 

@@ -38,7 +38,6 @@ const FormRegistro = ({ closeModal, visible, data, action }) => {
     };
 
     const uploadFiles = async (docRef) => {
-        debugger;
         const ingreso =
             evidenciaIngreso?.fileList?.length > 0
                 ? await uploadFileToFirebase(evidenciaIngreso.fileList[0])
